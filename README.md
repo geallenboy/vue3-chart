@@ -1,2 +1,2 @@
-# vue3-g2plot
+# vue3-chart
 基于g2plot封装vue3图表库
