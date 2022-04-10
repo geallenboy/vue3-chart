@@ -18,13 +18,13 @@
     "access": "public"
   },
   "scripts": {
-    "dev": "vitepress dev docs",
+    "dev:docs": "vitepress dev docs",
+    "build:docs": "vitepress build docs",
     "test": "jest",
     "build": "npm run build:es && npm run build:commonjs && npm run build:types",
     "build:es": "cross-env BABEL_ENV=commonjs babel src -d es --extensions .ts,.tsx --delete-dir-on-start",
     "build:commonjs": "cross-env BABEL_ENV=commonjs babel src -d lib --extensions .ts,.tsx --delete-dir-on-start",
     "build:types": "tsc && tsc --declarationDir ./es",
-    "build:docs": "vitepress build docs",
     "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md",
     "postversion": "npm publish",
     "lint:eslint": "eslint --cache --max-warnings 0 \"{src,mock}/**/*.{vue,ts,tsx}\" --fix",

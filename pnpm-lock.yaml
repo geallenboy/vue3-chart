@@ -8,6 +8,7 @@ specifiers:
   '@commitlint/cli': ^16.2.1
   '@commitlint/config-conventional': ^16.2.1
   '@garron/standard': ^1.4.1
+  '@opd/g2plot-vue': ^3.6.3
   '@types/eslint': ^8.2.0
   '@types/lodash': ^4.14.162
   '@typescript-eslint/eslint-plugin': ^5.0.0
@@ -38,6 +39,7 @@ specifiers:
 dependencies:
   '@antv/g2': registry.npmmirror.com/@antv/g2/4.1.49
   '@antv/g2plot': registry.npmmirror.com/@antv/g2plot/2.4.15
+  '@opd/g2plot-vue': registry.npmmirror.com/@opd/g2plot-vue/3.6.3_d90a897161457f1c226d6557ef74448a
   lodash: registry.npmmirror.com/lodash/4.17.21
   vue: registry.npmmirror.com/vue/3.2.31
 
@@ -2597,6 +2599,28 @@ packages:
       fastq: registry.npmmirror.com/fastq/1.13.0
     dev: true
 
+  registry.npmmirror.com/@opd/g2plot-vue/3.6.3_d90a897161457f1c226d6557ef74448a:
+    resolution: {integrity: sha512-bJf4aqFPXQH3xJ7a9/6ul0Lykolp898/ffcw10BA1ZFNKcyuKgR+gb2tPFxgNUotibqv1mtA5lwawxw0dg9+Eg==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@opd/g2plot-vue/-/g2plot-vue-3.6.3.tgz}
+    id: registry.npmmirror.com/@opd/g2plot-vue/3.6.3
+    name: '@opd/g2plot-vue'
+    version: 3.6.3
+    requiresBuild: true
+    peerDependencies:
+      '@antv/g2plot': ^2.3.0
+      '@babel/runtime': ^7.13.0
+      '@vue/composition-api': ^1.0.0-rc.1
+      vue: ^2.0.0 || >=3.0.0
+    peerDependenciesMeta:
+      '@vue/composition-api':
+        optional: true
+    dependencies:
+      '@antv/g2plot': registry.npmmirror.com/@antv/g2plot/2.4.15
+      '@vue/composition-api': registry.npmmirror.com/@vue/composition-api/1.4.9_vue@3.2.31
+      core-js: registry.npmmirror.com/core-js/3.21.1
+      vue: registry.npmmirror.com/vue/3.2.31
+      vue-demi: registry.npmmirror.com/vue-demi/0.12.5_ac2a42527c362575429f172d82b9d821
+    dev: false
+
   registry.npmmirror.com/@sinonjs/commons/1.8.3:
     resolution: {integrity: sha512-xkNcLAn/wZaX14RPlwizcKicDk9G3F8m2nU3L7Ukm5zBgTwiT0wsoFAHx9Jq56fJA1z/7uKGtCRu16sOUCLIHQ==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@sinonjs/commons/-/commons-1.8.3.tgz}
     name: '@sinonjs/commons'
@@ -4231,7 +4255,6 @@ packages:
     name: core-js
     version: 3.21.1
     requiresBuild: true
-    dev: true
 
   registry.npmmirror.com/core-util-is/1.0.3:
     resolution: {integrity: sha512-ZQBvi1DcpJ4GDqanjucZ2Hj3wEO5pZDS89BWbkcrvdxksJorwUDDZamX9ldFkp9aw2lmBDLgkObEA4DWNJ9FYQ==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/core-util-is/-/core-util-is-1.0.3.tgz}
@@ -8991,6 +9014,25 @@ packages:
       - sass
       - stylus
     dev: true
+
+  registry.npmmirror.com/vue-demi/0.12.5_ac2a42527c362575429f172d82b9d821:
+    resolution: {integrity: sha512-BREuTgTYlUr0zw0EZn3hnhC3I6gPWv+Kwh4MCih6QcAeaTlaIX0DwOVN0wHej7hSvDPecz4jygy/idsgKfW58Q==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/vue-demi/-/vue-demi-0.12.5.tgz}
+    id: registry.npmmirror.com/vue-demi/0.12.5
+    name: vue-demi
+    version: 0.12.5
+    engines: {node: '>=12'}
+    hasBin: true
+    requiresBuild: true
+    peerDependencies:
+      '@vue/composition-api': ^1.0.0-rc.1
+      vue: ^3.0.0-0 || ^2.6.0
+    peerDependenciesMeta:
+      '@vue/composition-api':
+        optional: true
+    dependencies:
+      '@vue/composition-api': registry.npmmirror.com/@vue/composition-api/1.4.9_vue@3.2.31
+      vue: registry.npmmirror.com/vue/3.2.31
+    dev: false
 
   registry.npmmirror.com/vue-eslint-parser/8.3.0_eslint@8.13.0:
     resolution: {integrity: sha512-dzHGG3+sYwSf6zFBa0Gi9ZDshD7+ad14DGOdTLjruRVgZXe2J+DcZ9iUhyR48z5g1PqRa20yt3Njna/veLJL/g==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/vue-eslint-parser/-/vue-eslint-parser-8.3.0.tgz}

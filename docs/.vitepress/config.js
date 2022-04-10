@@ -7,8 +7,7 @@ module.exports = {
     nav: [
       { text: 'Guide', link: '/guide/' },
       { text: 'Demo', link: '/demo/' },
-      { text: 'Github', link: 'https://github.com/geallenboy/vue3-chart.git' },
-      { text: 'G2Plot', link: 'https://g2plot.antv.vision' }
+      { text: 'Github', link: 'https://github.com/geallenboy/vue3-chart.git' }
     ]
   }
 };
