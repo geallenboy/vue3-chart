@@ -1,6 +1,6 @@
 ---
-title: Demo
+title: bar
 ---
 
 ## Basic
-demo
+bar

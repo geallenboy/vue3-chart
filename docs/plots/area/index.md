@@ -1,25 +1,9 @@
 ---
-title: Guide
+title: area
 ---
 
-## 内容
 
-vue3-chart
-
-## 特性
-
-- `G2Plot`
-- `vue3-chart`
-- `TypeScript`
-- **100%** unit test coverage
-
-## 安装
-
-```bash
-npm i @garrond/vue3-chart
-```
-
-## Usage
+## 使用
 
 ### jsx
 
