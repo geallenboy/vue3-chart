@@ -19,7 +19,7 @@ vue3-chart
 npm i @garrond/vue3-chart
 ```
 
-## Usage
+## 使用
 
 ### jsx
 
