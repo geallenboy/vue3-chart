@@ -6,12 +6,11 @@
   "module": "es/index.js",
   "directories": {
     "lib": "lib",
-    "test": "__tests__"
+    "test": "tests"
   },
   "files": [
     "lib",
     "es",
-    "scripts",
     "*.d.ts"
   ],
   "publishConfig": {
@@ -24,9 +23,7 @@
     "build": "npm run build:es && npm run build:commonjs && npm run build:types",
     "build:es": "cross-env BABEL_ENV=commonjs babel src -d es --extensions .ts,.tsx --delete-dir-on-start",
     "build:commonjs": "cross-env BABEL_ENV=commonjs babel src -d lib --extensions .ts,.tsx --delete-dir-on-start",
-    "build:types": "tsc && tsc --declarationDir ./es",
-    "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md",
-    "postversion": "npm publish",
+    "build:types": "tsc --declarationDir ./lib && tsc --declarationDir ./es",
     "lint:eslint": "eslint --cache --max-warnings 0 \"{src,mock}/**/*.{vue,ts,tsx}\" --fix",
     "lint:lint-staged": "lint-staged",
     "lint:prettier": "prettier --write  \"src/**/*.{tsx,vue,ts}\"",
@@ -39,7 +36,6 @@
   "keywords": [
     "g2plot",
     "vue3",
-    "vue",
     "g2",
     "chart"
   ],
