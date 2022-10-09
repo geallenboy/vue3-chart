@@ -1,6 +1,6 @@
 {
   "name": "@garron/vue3-chart",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "vue3-chart",
   "main": "lib/index.js",
   "module": "es/index.js",
